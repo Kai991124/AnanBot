@@ -149,3 +149,5 @@ Dockerfile
 pyproject.toml
 workspace.code-workspace
 pyclean.bat
+cqhttp/
+log.*
