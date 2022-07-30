@@ -345,38 +345,38 @@ async def _(bot: Bot, event: PokeNotifyEvent):
 # -------------------------------------------------------------
 #   定时功能实现
 # -------------------------------------------------------------
-@scheduler.scheduled_job("cron", hour=0, minute=0)
-async def _():
-    """晚安通知"""
-    logger.info("<y>群管理</y> | 晚安通知 | 正在发送晚安通知")
-    all_bot = get_bots()
-    for _, bot in all_bot.items():
-        group_list: list[dict] = await bot.get_group_list()
-        count_all = len(group_list)
-        count_success = 0
-        count_failed = 0
-        count_closed = 0
-        time_start = time.time()
-        async for group_id in GroupList_Async(group_list):
-            goodnight_status = await GroupInfo.get_config_status(
-                group_id, GroupSetting.晚安通知
-            )
-            robot_status = await GroupInfo.get_bot_status(group_id=group_id)
-            if goodnight_status and robot_status:
-                try:
-                    msg = await source.message_decoder(group_id, NoticeType.晚安通知)
-                    await bot.send_group_msg(group_id=group_id, message=msg)
-                    await asyncio.sleep(random.uniform(0.3, 0.5))
-                    count_success += 1
-                except Exception:
-                    log = f"群({group_id}) | 被禁言了，无法发送晚安..."
-                    logger.warning(log)
-                    count_failed += 1
-            else:
-                count_closed += 1
-        time_end = time.time()
-        time_use = round(time_end - time_start, 2)
-        superusers = list(bot.config.superusers)
-        for user in superusers:
-            msg = f"发送晚安完毕，共发送 {count_all} 个群\n发送成功 {count_success} 个\n发送失败 {count_failed} 个\n关闭通知 {count_closed}个\n用时 {time_use} 秒"
-            await bot.send_private_msg(user_id=int(user), message=msg)
+# @scheduler.scheduled_job("cron", hour=0, minute=0)
+# async def _():
+#     """晚安通知"""
+#     logger.info("<y>群管理</y> | 晚安通知 | 正在发送晚安通知")
+#     all_bot = get_bots()
+#     for _, bot in all_bot.items():
+#         group_list: list[dict] = await bot.get_group_list()
+#         count_all = len(group_list)
+#         count_success = 0
+#         count_failed = 0
+#         count_closed = 0
+#         time_start = time.time()
+#         async for group_id in GroupList_Async(group_list):
+#             goodnight_status = await GroupInfo.get_config_status(
+#                 group_id, GroupSetting.晚安通知
+#             )
+#             robot_status = await GroupInfo.get_bot_status(group_id=group_id)
+#             if goodnight_status and robot_status:
+#                 try:
+#                     msg = await source.message_decoder(group_id, NoticeType.晚安通知)
+#                     await bot.send_group_msg(group_id=group_id, message=msg)
+#                     await asyncio.sleep(random.uniform(0.3, 0.5))
+#                     count_success += 1
+#                 except Exception:
+#                     log = f"群({group_id}) | 被禁言了，无法发送晚安..."
+#                     logger.warning(log)
+#                     count_failed += 1
+#             else:
+#                 count_closed += 1
+#         time_end = time.time()
+#         time_use = round(time_end - time_start, 2)
+#         superusers = list(bot.config.superusers)
+#         for user in superusers:
+#             msg = f"发送晚安完毕，共发送 {count_all} 个群\n发送成功 {count_success} 个\n发送失败 {count_failed} 个\n关闭通知 {count_closed}个\n用时 {time_use} 秒"
+#             await bot.send_private_msg(user_id=int(user), message=msg)
