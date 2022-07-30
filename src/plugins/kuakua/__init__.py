@@ -63,4 +63,4 @@ async def _(event: GroupMessageEvent):
     message = event.get_plaintext()
     name = re.search(r'([Jerry|jerry]+)', message).group()
     message=f'{name}是我的主人的宝贝，是世界上最好的宝！！！！！'
-    await sf_kuakua.finish(message)
+    await lp_kuakua.finish(message)
