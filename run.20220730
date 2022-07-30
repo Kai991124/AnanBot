@@ -1,0 +1,244 @@
+07-30 08:40:39 [SUCCESS] nonebot | NoneBot is initializing...
+07-30 08:40:39 [INFO] nonebot | Current Env: prod
+07-30 08:40:39 [SUCCESS] nonebot | Succeeded to import "server_manager"
+07-30 08:40:39 [SUCCESS] nonebot | Succeeded to import "plugin_manager"
+07-30 08:40:39 [SUCCESS] nonebot | Succeeded to import "admin_manager"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "group_manager"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "tiangou"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "jx3_search"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "sign"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "weather"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "chat"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "auto_chat"
+07-30 08:40:40 [SUCCESS] nonebot | Succeeded to import "plum_blossom"
+07-30 08:40:40 [SUCCESS] nonebot | Running NoneBot...
+07-30 08:40:40 [INFO] uvicorn | Started server process [22980]
+07-30 08:40:40 [INFO] uvicorn | Waiting for application startup.
+07-30 08:40:40 [INFO] src | 数据库初始化成功。
+07-30 08:40:40 [INFO] src | 定时器模块已开启。
+07-30 08:40:40 [INFO] 服务管理插件 | 正在初始化浏览器...
+07-30 08:40:41 [INFO] 服务管理插件 | 浏览器初始化完毕。
+07-30 08:40:41 [INFO] 服务管理插件 | 正在链接jx3api的ws服务器...
+07-30 08:40:41 [INFO] 服务管理插件 | jx3api的ws服务器已链接。
+07-30 08:40:41 [INFO] uvicorn | Application startup complete.
+07-30 08:40:41 [INFO] uvicorn | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+07-30 08:40:41 [INFO] uvicorn | ('127.0.0.1', 56698) - "WebSocket /onebot/v11/ws" [accepted]
+07-30 08:40:41 [INFO] nonebot | OneBot V11 | Bot 1099220492 connected
+07-30 08:40:41 [INFO] websockets | connection open
+07-30 08:40:41 [INFO] 服务管理插件 | Bot 1099220492 已连接，正在注册...
+07-30 08:40:41 [INFO] 服务管理插件 | Bot 1099220492 注册完毕。
+07-30 08:41:24 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [notice.client_status]: {'time': 1659141684, 'self_id': 1099220492, 'post_type': 'notice', 'notice_type': 'client_status', 'online': True, 'client': {'app_id': 537125769, 'device_kind': 'iPhone XR', 'device_name': 'KAI'}}
+07-30 08:41:24 [INFO] nonebot | Event will be handled by <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False>
+07-30 08:41:24 [INFO] nonebot | Matcher <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False> running complete
+07-30 08:42:00 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [notice.client_status]: {'time': 1659141720, 'self_id': 1099220492, 'post_type': 'notice', 'notice_type': 'client_status', 'online': False, 'client': {'app_id': 537125769, 'device_kind': 'iPhone XR', 'device_name': 'KAI'}}
+07-30 08:42:00 [INFO] nonebot | Event will be handled by <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False>
+07-30 08:42:00 [INFO] nonebot | Matcher <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False> running complete
+07-30 08:42:49 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [notice.notify.poke]: {'time': 1659141769, 'self_id': 1099220492, 'post_type': 'notice', 'notice_type': 'notify', 'sub_type': 'poke', 'user_id': 3585755446, 'group_id': 258379930, 'target_id': 1099220492, 'sender_id': 3585755446}
+07-30 08:42:49 [INFO] nonebot | Event will be handled by <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False>
+07-30 08:42:49 [INFO] nonebot | Matcher <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False> running complete
+07-30 08:44:26 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1474326382 from 3585755446@[群:258379930] "为什么我今天还加班"
+07-30 08:44:26 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:44:26 [INFO] 智能闲聊 | 群258379930 | 3585755446 | 请求：为什么我今天还加班
+07-30 08:44:28 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:44:43 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1175581118 from 3585755446@[群:258379930] "单休真的合法吗？"
+07-30 08:44:43 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:44:43 [INFO] 智能闲聊 | 群258379930 | 3585755446 | 请求：单休真的合法吗？
+07-30 08:44:46 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:45:07 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1351461751 from 3438406821@[群:258379930] "？"
+07-30 08:45:13 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1732071460 from 3585755446@[群:950128534] "单休真的合法吗？"
+07-30 08:45:13 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:45:13 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：单休真的合法吗？
+07-30 08:45:15 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:45:22 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1993133816 from 3585755446@[群:950128534] "help"
+07-30 08:45:22 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:45:22 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：help
+07-30 08:45:24 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:45:44 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1615893565 from 3585755446@[群:950128534] "成语 三心二意"
+07-30 08:46:11 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 391619755 from 3585755446@[群:950128534] "计算 25*20"
+07-30 08:46:44 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1906379503 from 3585755446@[群:950128534] "给大家表演完了被自己写的机器人骗，他从哪儿学的这个啊"
+07-30 08:47:04 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -914031923 from 3585755446@[群:258379930] "help"
+07-30 08:47:04 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:47:04 [INFO] 智能闲聊 | 群258379930 | 3585755446 | 请求：help
+07-30 08:47:07 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:47:17 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 775739338 from 3585755446@[群:258379930] "翻译 我喜欢你"
+07-30 08:47:17 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:47:17 [INFO] 智能闲聊 | 群258379930 | 3585755446 | 请求：翻译 我喜欢你
+07-30 08:47:21 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:48:40 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 972844729 from 3585755446@[群:258379930] "翻译 机器人即将统治地球"
+07-30 08:48:40 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:48:40 [INFO] 智能闲聊 | 群258379930 | 3585755446 | 请求：翻译 机器人即将统治地球
+07-30 08:48:42 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:49:20 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1078335147 from 519522661@[群:718030876] "给这孩子搭建了一些nlp接口"
+07-30 08:49:44 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 788985028 from 519522661@[群:718030876] "翻译 机器人即将统治地球"
+07-30 08:49:44 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:49:44 [INFO] 智能闲聊 | 群718030876 | 519522661 | 请求：翻译 机器人即将统治地球
+07-30 08:49:48 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:50:15 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 952520119 from 519522661@[群:718030876] "计算 20*(100+5)"
+07-30 08:50:17 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [notice.group_recall]: {'time': 1659142215, 'self_id': 1099220492, 'post_type': 'notice', 'notice_type': 'group_recall', 'user_id': 519522661, 'group_id': 718030876, 'operator_id': 519522661, 'message_id': 952520119}
+07-30 08:50:17 [INFO] nonebot | Event will be handled by <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False>
+07-30 08:50:17 [INFO] nonebot | Matcher <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False> running complete
+07-30 08:50:21 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1338080545 from 519522661@[群:718030876] "计算 20*(100+5)"
+07-30 08:50:21 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:50:21 [INFO] 智能闲聊 | 群718030876 | 519522661 | 请求：计算 20*(100+5)
+07-30 08:50:24 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:50:32 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1580262387 from 519522661@[群:718030876] "🤪"
+07-30 08:52:53 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1068206510 from 519522661@[群:718030876] "星座 射手座"
+07-30 08:52:53 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 08:52:53 [INFO] 智能闲聊 | 群718030876 | 519522661 | 请求：星座 射手座
+07-30 08:52:56 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 08:57:03 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -777656190 from 519522661@[群:718030876] "天气 武汉"
+07-30 08:57:03 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.weather, type=message, priority=5, temp=False>
+07-30 08:57:04 [INFO] nonebot | Matcher <Matcher from src.plugins.weather, type=message, priority=5, temp=False> running complete
+07-30 08:57:10 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 907920773 from 519522661@[群:718030876] "签到"
+07-30 08:57:10 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.sign, type=message, priority=5, temp=False>
+07-30 08:57:10 [INFO] 每日签到 | 群718030876 | 519522661 | 请求签到
+07-30 08:57:11 [INFO] nonebot | Matcher <Matcher from src.plugins.sign, type=message, priority=5, temp=False> running complete
+07-30 08:57:18 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -347977561 from 519522661@[群:718030876] "天气 武汉"
+07-30 08:57:18 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.weather, type=message, priority=5, temp=False>
+07-30 08:57:18 [INFO] 天气查询 | 群718030876 | 519522661 | 请求：武汉
+07-30 08:57:22 [INFO] nonebot | Matcher <Matcher from src.plugins.weather, type=message, priority=5, temp=False> running complete
+07-30 09:02:24 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -111557241 from 3585755446@[群:950128534] "哦我用错了"
+07-30 09:02:32 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1776736278 from 3585755446@[群:950128534] "成语 三心二意"
+07-30 09:02:32 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 09:02:32 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：成语 三心二意
+07-30 09:02:34 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 09:03:22 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 2116444517 from 3585755446@[群:950128534] "翻译 It won't take too long to pickup my daughter back home."
+07-30 09:03:22 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 09:03:22 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：翻译 It won't take too long to pickup my daughter back home.
+07-30 09:03:25 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 09:03:51 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1876426679 from 3585755446@[群:950128534] "邮编 湖北武汉洪山区"
+07-30 09:03:51 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 09:03:51 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：邮编 湖北武汉洪山区
+07-30 09:03:53 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 09:04:02 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 2035000700 from 3585755446@[群:950128534] "邮编 武汉"
+07-30 09:04:02 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 09:04:02 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：邮编 武汉
+07-30 09:04:05 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 09:04:16 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1757035440 from 3585755446@[群:950128534] "呕"
+07-30 09:04:16 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False>
+07-30 09:04:16 [INFO] nonebot | Matcher <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False> running is cancelled
+07-30 09:04:53 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1162622907 from 1239443199@[群:662973064] "你这个年纪你睡得着觉？"
+07-30 09:04:53 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 09:04:53 [INFO] 智能闲聊 | 群662973064 | 1239443199 | 请求：你这个年纪你睡得着觉？
+07-30 09:04:56 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 09:12:32 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1684574473 from 519522661@[群:662973064] "翻译 佛山这种地方，工资不高，物价和广州一个样"
+07-30 09:12:32 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 09:12:32 [INFO] 智能闲聊 | 群662973064 | 519522661 | 请求：翻译 佛山这种地方，工资不高，物价和广州一个样
+07-30 09:12:35 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 09:12:47 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1972965339 from 519522661@[群:662973064] "好垃圾的翻译"
+07-30 09:12:47 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False>
+07-30 09:12:47 [INFO] nonebot | Matcher <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False> running is cancelled
+07-30 09:12:55 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -335701384 from 519522661@[群:662973064] "我之后换个接口"
+07-30 09:13:05 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1661293842 from 1239443199@[群:662973064] "这不是我的水平吗"
+07-30 09:13:14 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 99875668 from 1239443199@[群:662973064] "这个还要它来翻译？"
+07-30 09:14:03 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1928645570 from 519522661@[群:662973064] "啊我发现它对口语理解不太行"
+07-30 09:14:30 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -498346413 from 519522661@[群:662973064] "用标准化的句子应该可以，我刚换了一个api还是不行"
+07-30 09:15:17 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1790122299 from 519522661@[群:662973064] "翻译 标准化的编程规范应该被各大公司采用，这样一来业界水平才能提升。"
+07-30 09:15:17 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 09:15:17 [INFO] 智能闲聊 | 群662973064 | 519522661 | 请求：翻译 标准化的编程规范应该被各大公司采用，这样一来业界水平才能提升。
+07-30 09:15:20 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 09:15:28 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -2104729674 from 519522661@[群:662973064] "也很一般"
+07-30 09:15:44 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 461704716 from 519522661@[群:662973064] "[CQ:image,file=63df4d137d3255e00eaf5bd5a1c1ac6c.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/519522661/662973064-3212487186-63DF4D137D3255E00EAF5BD5A1C1AC6C/0?term=3]"
+07-30 09:15:50 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1820475034 from 519522661@[群:662973064] "DeepL就好很多"
+07-30 09:15:57 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -219763911 from 519522661@[群:662973064] "我用DeepL好了"
+07-30 09:17:44 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -2048812113 from 1239443199@[群:662973064] "佛山真的太垃圾了，等公交不来想早点摸去广州都不行"
+07-30 09:18:11 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 485018133 from 1239443199@[群:662973064] "[CQ:face,id=287]地铁建好我直接坐穿"
+07-30 09:19:34 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -532482874 from 279253749@[群:950128534] "这啥"
+07-30 09:25:39 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1895688535 from 3585755446@[群:950128534] "这不是啥"
+07-30 09:25:40 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 133880257 from 3585755446@[群:950128534] "qaq"
+07-30 09:28:56 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1810889347 from 1310629773@[群:662973064] "[CQ:face,id=277]"
+07-30 09:44:23 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -78584046 from 519522661@[群:662973064] "物价 复刻彩云"
+07-30 09:44:23 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.jx3_search, type=message, priority=5, temp=False>
+07-30 09:44:23 [INFO] 剑三查询 | 群662973064 | 519522661 | 物价查询 | 请求：复刻彩云
+07-30 09:44:23 [INFO] nonebot | Matcher <Matcher from src.plugins.jx3_search, type=message, priority=5, temp=False> running complete
+07-30 09:44:34 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -559530781 from 519522661@[群:662973064] "物价 二代彩云"
+07-30 09:44:34 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.jx3_search, type=message, priority=5, temp=False>
+07-30 09:44:34 [INFO] 剑三查询 | 群662973064 | 519522661 | 物价查询 | 请求：二代彩云
+07-30 09:44:34 [INFO] nonebot | Matcher <Matcher from src.plugins.jx3_search, type=message, priority=5, temp=False> running complete
+07-30 09:44:46 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 816340431 from 519522661@[群:662973064] "物价 彩云归"
+07-30 09:44:46 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.jx3_search, type=message, priority=5, temp=False>
+07-30 09:44:46 [INFO] 剑三查询 | 群662973064 | 519522661 | 物价查询 | 请求：彩云归
+07-30 09:44:49 [INFO] nonebot | Matcher <Matcher from src.plugins.jx3_search, type=message, priority=5, temp=False> running complete
+07-30 09:53:42 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1575453455 from 1486082050@[群:958320522] "[CQ:image,file=57eaf2164bc47e23ad6a4fd00bf85574.image,subType=0,url=https://gchat.qpic.cn/gchatpic_new/1486082050/958320522-2468534736-57EAF2164BC47E23AD6A4FD00BF85574/0?term=3]"
+07-30 10:02:10 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -640943878 from 1310629773@[群:662973064] "几百年没更新过了"
+07-30 10:07:52 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1426797222 from 827367205@[群:950128534] "好专业啊"
+07-30 10:07:55 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 571212336 from 827367205@[群:950128534] "的机器人"
+07-30 10:07:55 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 10:07:55 [INFO] 智能闲聊 | 群950128534 | 827367205 | 请求：的机器人
+07-30 10:07:58 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1157278838 from 827367205@[群:950128534] "夸夸"
+07-30 10:07:59 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 10:08:05 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1382479551 from 827367205@[群:950128534] "居然还有翻译"
+07-30 10:10:13 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 627164713 from 3585755446@[群:950128534] "哈哈"
+07-30 10:10:51 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1133996141 from 308929332@[群:950128534] "牛"
+07-30 10:10:51 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 10:10:51 [INFO] 智能闲聊 | 群950128534 | 308929332 | 请求：牛
+07-30 10:10:53 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 10:10:58 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1540405908 from 308929332@[群:950128534] "哈哈哈"
+07-30 10:11:13 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 752323074 from 3585755446@[群:950128534] "[CQ:at,qq=308929332] 兔"
+07-30 10:11:22 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [notice.group_recall]: {'time': 1659147073, 'self_id': 1099220492, 'post_type': 'notice', 'notice_type': 'group_recall', 'user_id': 3585755446, 'group_id': 950128534, 'operator_id': 3585755446, 'message_id': 752323074}
+07-30 10:11:22 [INFO] nonebot | Event will be handled by <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False>
+07-30 10:11:22 [INFO] nonebot | Matcher <Matcher from src.managers.group_manager, type=notice, priority=3, temp=False> running complete
+07-30 10:11:24 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1276117991 from 827367205@[群:950128534] "哈哈哈哈哈哈哈哈"
+07-30 10:11:30 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 991376241 from 3585755446@[群:950128534] "兔"
+07-30 10:11:30 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 10:11:30 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：兔
+07-30 10:11:32 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 10:11:33 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -719760803 from 3585755446@[群:950128534] "[CQ:image,file=6b28eacc5c5a8139fcc2f656b4c24cb6.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/3585755446/950128534-2657100544-6B28EACC5C5A8139FCC2F656B4C24CB6/0?term=3]"
+07-30 10:11:48 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1266534398 from 3585755446@[群:950128534] "星座 射手座"
+07-30 10:11:48 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 10:11:48 [INFO] 智能闲聊 | 群950128534 | 3585755446 | 请求：星座 射手座
+07-30 10:11:49 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1014691688 from 827367205@[群:950128534] "龙"
+07-30 10:11:49 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 10:11:49 [INFO] 智能闲聊 | 群950128534 | 827367205 | 请求：龙
+07-30 10:11:51 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 10:11:53 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 10:12:04 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1120635861 from 3585755446@[群:950128534] "？老糖竟然是00后"
+07-30 10:12:12 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 902609731 from 3585755446@[群:950128534] "[CQ:image,file=70a1268c1e8528d86fcf026061099b6e.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/3585755446/950128534-2891441904-70A1268C1E8528D86FCF026061099B6E/0?term=3]"
+07-30 10:12:15 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -880271576 from 827367205@[群:950128534] "？你第一天认识我"
+07-30 10:12:21 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1131466818 from 827367205@[群:950128534] "人家家就是00后啦"
+07-30 10:12:28 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 629571076 from 827367205@[群:950128534] "[CQ:image,file=130f3fbe7a0ce240002fd22cbe90ac2b.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/827367205/950128534-2774529304-130F3FBE7A0CE240002FD22CBE90AC2B/0?term=3]"
+07-30 10:12:35 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1384205970 from 3585755446@[群:950128534] "我以为你和我差不多大"
+07-30 10:12:41 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -857351375 from 3585755446@[群:950128534] "[CQ:image,file=e29ffc19e44830ba499c76eb18a94b2e.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/3585755446/950128534-2934513856-E29FFC19E44830BA499C76EB18A94B2E/0?term=3]"
+07-30 10:12:46 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1142756441 from 827367205@[群:950128534] "人家家十七岁啦"
+07-30 10:12:53 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 585873949 from 827367205@[群:950128534] "谁和你一样大，臭男人"
+07-30 10:12:59 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1441565323 from 827367205@[群:950128534] "哈哈哈哈哈哈哈哈哈哈哈"
+07-30 10:13:08 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -984377574 from 3585755446@[群:950128534] "好"
+07-30 10:13:13 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1303074932 from 827367205@[群:950128534] "明明"
+07-30 10:13:13 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False>
+07-30 10:13:13 [INFO] nonebot | Matcher <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False> running is cancelled
+07-30 10:13:15 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -762106263 from 827367205@[群:950128534] "我们"
+07-30 10:13:16 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1517019393 from 3585755446@[群:950128534] "[CQ:image,file=6b28eacc5c5a8139fcc2f656b4c24cb6.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/3585755446/950128534-3030234434-6B28EACC5C5A8139FCC2F656B4C24CB6/0?term=3]"
+07-30 10:13:18 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1016942405 from 827367205@[群:950128534] "之前就说过"
+07-30 10:13:20 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1268416467 from 827367205@[群:950128534] "结果你都忘了"
+07-30 10:13:23 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -704714128 from 827367205@[群:950128534] "啧啧啧"
+07-30 10:13:26 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1560683802 from 827367205@[群:950128534] "和我说话"
+07-30 10:13:26 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.chat, type=message, priority=9, temp=False>
+07-30 10:13:26 [INFO] 智能闲聊 | 群950128534 | 827367205 | 请求：和我说话
+07-30 10:13:28 [INFO] nonebot | Matcher <Matcher from src.plugins.chat, type=message, priority=9, temp=False> running complete
+07-30 10:13:28 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1291303882 from 3585755446@[群:950128534] "我只知道你比我小一届"
+07-30 10:13:29 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -599218597 from 827367205@[群:950128534] "果然说了就忘"
+07-30 10:13:31 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1420847411 from 827367205@[群:950128534] "伤心了"
+07-30 10:13:36 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 43253527 from 827367205@[群:950128534] "根本没放在心上"
+07-30 10:13:38 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1972686721 from 827367205@[群:950128534] "呜呜呜"
+07-30 10:13:41 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -325214661 from 827367205@[群:950128534] "[CQ:image,file=35bf5149accc4f92cdd21af41b03e75f.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/827367205/950128534-2632056472-35BF5149ACCC4F92CDD21AF41B03E75F/0?term=3]"
+07-30 10:13:51 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1684361555 from 3585755446@[群:950128534] "因为比我小一届两届一般和我一样大"
+07-30 10:13:51 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 100547342 from 827367205@[群:950128534] "是这样吗"
+07-30 10:14:03 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1928924056 from 827367205@[群:950128534] "结果没想到"
+07-30 10:14:04 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -336569822 from 3585755446@[群:950128534] "我就这么算年龄了"
+07-30 10:14:05 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -1661506892 from 3585755446@[群:950128534] "呜呜呜"
+07-30 10:14:05 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False>
+07-30 10:14:05 [INFO] nonebot | Matcher <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False> running is cancelled
+07-30 10:14:14 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 206075685 from 3585755446@[群:950128534] "我npy 02的"
+07-30 10:14:18 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 2068793267 from 827367205@[群:950128534] "我也是早读书的天才明教"
+07-30 10:14:21 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 461950550 from 827367205@[群:950128534] "哈哈哈哈哈哈哈哈哈"
+07-30 10:14:24 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1821376192 from 3585755446@[群:950128534] "对哦"
+07-30 10:14:25 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -175722630 from 3585755446@[群:950128534] "哈哈哈"
+07-30 10:14:25 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -2105434132 from 827367205@[群:950128534] "啊"
+07-30 10:14:28 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 484772431 from 827367205@[群:950128534] "好小"
+07-30 10:14:35 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1809988313 from 827367205@[群:950128534] "好年轻"
+07-30 10:14:35 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -219452573 from 3585755446@[群:950128534] "他也大四了"
+07-30 10:14:42 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message -2048107531 from 3585755446@[群:950128534] "都是早读书的宝"
+07-30 10:14:43 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 357779044 from 3585755446@[群:950128534] "哈哈哈"
+07-30 10:14:43 [INFO] nonebot | Event will be handled by <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False>
+07-30 10:14:43 [INFO] nonebot | Matcher <Matcher from src.plugins.auto_chat, type=message, priority=99, temp=False> running is cancelled
+07-30 10:14:49 [SUCCESS] nonebot | ONEBOT V11 1099220492 | [message.group.normal]: Message 1649702642 from 827367205@[群:950128534] "[CQ:image,file=f27fc53c8047f504476669f933248877.image,subType=1,url=https://gchat.qpic.cn/gchatpic_new/827367205/950128534-2539029104-F27FC53C8047F504476669F933248877/0?term=3]"
