@@ -46,8 +46,9 @@ class EAT:
             req_json = req.json()
             ## print recipe
             ## 选择一个recipe
-
-            if eval(req_json["code"]) == 10000:
+            print(req_json['code'])
+            print(type(req_json['code']))
+            if (req_json["code"]) == 10000:
                 recipe_list = req_json['result']['result']['list']
                 recipe_num = len(recipe_list)
                 if recipe_num == 0:
