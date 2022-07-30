@@ -50,6 +50,8 @@ class EAT:
         try:
             req = await self.client.get(self.jd_url, params=params)
             req_json = req.json()
+            print(req_json)
+            print(type(req_json))
             ## print recipe
             ## 选择一个recipe
             if (eval(req_json["code"])) == 10000:

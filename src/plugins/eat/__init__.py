@@ -19,7 +19,7 @@ __plugin_meta__ = PluginMetadata(
 
 
 eat_suggest = on_regex(pattern=r"吃啥", permission=GROUP, priority=5, block=True)
-recipe_suggest = on_regex(pattern=r"做啥吃", permission=GROUP, priority=5, block=True)
+recipe_suggest = on_regex(pattern=r"菜谱 [\u4e00-\u9fa5]+", permission=GROUP, priority=5, block=True)
 
 
 @eat_suggest.handle()
