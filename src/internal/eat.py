@@ -1,3 +1,4 @@
+import re
 from typing import Optional
 
 from httpx import AsyncClient
@@ -20,7 +21,6 @@ class EAT:
 
     def __init__(self):
         self.client = AsyncClient()
-        self.api = JX3API()
         self.key = 'bdcd86b83410c65b0981a17367a352bd'
         self.jd_url = 'https://way.jd.com/jisuapi/search'
 
@@ -41,6 +41,11 @@ class EAT:
 
         """
         params = {"keyword": text, "num": 5, "start": 0, "appkey": self.key}
+        if not re.search(r'菜谱 ([\u4e00-\u9fa5]+)',text):
+            msg='您输入的参数不正确qaq安安看不懂'
+            return msg
+        else:
+            text=re.search(r'菜谱 ([\u4e00-\u9fa5]+)',text).group(1)
         print(text)
         try:
             req = await self.client.get(self.jd_url, params=params)
@@ -48,9 +53,10 @@ class EAT:
             ## print recipe
             ## 选择一个recipe
             if (eval(req_json["code"])) == 10000:
-                search_result= recipe_list = req_json['result']['result']
+                search_result = req_json['result']['result']
                 if search_result == None:
                     msg = f'{nickname}也不知道有什么可以用{text}做的菜呜呜呜'
+                    print(msg)
                     return msg
                 recipe_list = req_json['result']['result']['list']
                 recipe_num = len(recipe_list)
