@@ -40,7 +40,7 @@ class EAT:
             response format:
 
         """
-        params = {"keyword": text, "num": 5, "start": 10, "appkey": self.key}
+        params = {"keyword": text, "num": 5, "start": 0, "appkey": self.key}
         try:
             req = await self.client.get(self.jd_url, params=params)
             req_json = req.json()
@@ -48,7 +48,7 @@ class EAT:
             ## 选择一个recipe
             print(req_json['code'])
             print(type(req_json['code']))
-            if (req_json["code"]) == 10000:
+            if (eval(req_json["code"])) == 10000:
                 recipe_list = req_json['result']['result']['list']
                 recipe_num = len(recipe_list)
                 if recipe_num == 0:
