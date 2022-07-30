@@ -1,7 +1,3 @@
-"""
-nlp聊天实现，用于自动回复
-"""
-
 from typing import Optional
 
 from httpx import AsyncClient
@@ -14,7 +10,7 @@ import random
 
 class EAT:
     """
-    nlp封装类
+    吃东西封装类
     """
 
     client: AsyncClient
@@ -52,7 +48,7 @@ class EAT:
             ## 选择一个recipe
 
             if req_json["code"] == 10000:
-                recipe_list = response['result']['result']['list']
+                recipe_list = req_json['result']['result']['list']
                 recipe_num = len(recipe_list)
                 if recipe_num == 0:
                     msg = f'{nickname}也不知道有什么可以用{text}做的菜呜呜呜'
@@ -106,5 +102,5 @@ class EAT:
 
 eat = EAT()
 """
-nlp聊天封装，用于自动回复
+吃的聊天封装，用于自动回复
 """
