@@ -56,6 +56,9 @@ class PluginManager:
         """
         self.init()
         for module_name, plugin in self.plugins.items():
+            print('-'*10)
+            print(plugin)
+            print('-' * 10)
             flag = await PluginInfo.check_inited(group_id, module_name)
             if flag:
                 continue
