@@ -41,14 +41,17 @@ class EAT:
 
         """
         params = {"keyword": text, "num": 5, "start": 0, "appkey": self.key}
+        print(text)
         try:
             req = await self.client.get(self.jd_url, params=params)
             req_json = req.json()
             ## print recipe
             ## 选择一个recipe
-            print(req_json['code'])
-            print(type(req_json['code']))
             if (eval(req_json["code"])) == 10000:
+                search_result= recipe_list = req_json['result']['result']
+                if search_result == None:
+                    msg = f'{nickname}也不知道有什么可以用{text}做的菜呜呜呜'
+                    return msg
                 recipe_list = req_json['result']['result']['list']
                 recipe_num = len(recipe_list)
                 if recipe_num == 0:
@@ -56,6 +59,7 @@ class EAT:
                     return msg
                 ## choose one recipe
                 recipe_sort = random.randint(0, recipe_num - 1)
+                print()
                 recipe = recipe_list[recipe_sort]
                 name = recipe['name']
                 print(name)
@@ -67,7 +71,7 @@ class EAT:
                 for i in range(len(material)):
                     amount = material[i]['amount']
                     mname = material[i]['mname']
-                    temp_material_context = f'{amount}{mname}。' if i == 0 else f'{amount}{mname}、'
+                    temp_material_context = f'{amount}{mname}。' if i == len(material) else f'{amount}{mname}、'
                     material_context = material_context + temp_material_context
                 # 流程
 
