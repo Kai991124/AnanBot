@@ -57,6 +57,7 @@ class EAT:
                 recipe_sort = random.randint(0, recipe_num - 1)
                 recipe = recipe_list[recipe_sort]
                 name = recipe['name']
+                print(name)
                 material = recipe['material']
                 tag = recipe['tag']
                 process = recipe['process']
@@ -79,9 +80,11 @@ class EAT:
                 logger.debug(f"京东云请求成功，返回：{msg}")
                 return msg
             else:
+                print(f"京东云请求失败，返回：{req_json['code']}")
                 logger.debug(f"京东云请求失败，返回：{req_json['code']}")
                 return None
         except Exception as e:
+            print(f"京东云请求出错，返回：{str(e)}")
             logger.debug(f"京东云请求出错，返回：{str(e)}")
             return None
 

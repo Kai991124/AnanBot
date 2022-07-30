@@ -41,7 +41,9 @@ async def _(bot: Bot, event: GroupMessageEvent):
     nickname = list(bot.config.nickname)[0]
     message = event.get_plaintext()
     logger.info(f"<y>群{event.group_id}</y> | <g>{event.user_id}</g> | 请求：{message}")
+    print(message)
     msg = await eat.get_recipe_jd(nickname, message)
+    print(msg)
     await recipe_suggest.finish(msg)
 
 
