@@ -56,7 +56,7 @@ async def _(event: GroupMessageEvent):
     name = re.search(r'([安安|槐安安|唐一墨|师父]+)', message).group()
     message=f'{name}是我的主人，是世界上最好的主人！！！！！'
     await sf_kuakua.finish(message)
-@sf_kuakua.handle()
+@lp_kuakua.handle()
 async def _(event: GroupMessageEvent):
     '夸夸我lp'
     logger.info(f"<y>群{event.group_id}</y> | <g>{event.user_id}</g> | 请求夸夸")
