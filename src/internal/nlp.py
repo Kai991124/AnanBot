@@ -82,6 +82,11 @@ class NLP:
         返回:
             * `str`：回复内容
         """
+        '''
+        http://api.qingyunke.com/api.php?params={"key": "free", "appid": 0, "msg": "text"}
+        http://api.qingyunke.com/api.php?key=free&appid=0&msg=%E6%88%91%E7%88%B1%E4%BD%A0
+        req = await AsyncClient.get(self.qingyunke_url, params=params)
+        '''
         params = {"key": "free", "appid": 0, "msg": text}
         try:
             req = await self.client.get(self.qingyunke_url, params=params)
