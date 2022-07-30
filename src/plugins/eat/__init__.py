@@ -36,7 +36,7 @@ async def _(event: GroupMessageEvent):
     await eat_suggest.finish(reply)
 
 @recipe_suggest.handle()
-async def _(bot: Bot,event: GroupMessageEvent, name: str):
+async def _(bot: Bot, event: GroupMessageEvent):
     """菜谱查询"""
     nickname = list(bot.config.nickname)[0]
     message = event.get_plaintext()
