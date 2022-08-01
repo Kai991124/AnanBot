@@ -146,6 +146,7 @@ class NLP:
             req_json=req.json()
             if req_json["code_msg"] == 'Success':
                 msg = req_json['resp_Data']['reply']
+                print(msg)
                 logger.debug(f"阿里云请求成功，返回：{msg}")
                 return msg
             else:
