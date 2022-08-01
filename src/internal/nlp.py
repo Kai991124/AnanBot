@@ -147,9 +147,9 @@ class NLP:
             # print(type(req_json))
             # {'code': 200, 'code_msg': 'Success', 'trace_id': '561ab138746540b1a1e73c1fc69a33f7',
             #  'resp_data': {'reply': '《甄嬛传》中的女主角之一，由孙俪饰演。她与雍正皇帝之间发生了一段刻骨铭心、荡气回肠的爱情故事。', 'status': 3}}
-            if req_json['code'] == 200:
-                # print(req_json['resp_Data'])
-                msg = req_json['resp_Data']['reply']
+            if req_json['code_msg'] == 'Success':
+                # print(req_json['resp_data'])
+                msg = req_json['resp_data']['reply']
                 print(msg)
                 logger.debug(f"阿里云请求成功，返回：{msg}")
                 return msg
