@@ -145,9 +145,9 @@ class NLP:
             req = await self.client.post(url = url, headers=headers,json=data,timeout=None)
             req_json=req.json()
             # print(type(req_json))
-            {'code': 200, 'code_msg': 'Success', 'trace_id': '561ab138746540b1a1e73c1fc69a33f7',
-             'resp_data': {'reply': '《甄嬛传》中的女主角之一，由孙俪饰演。她与雍正皇帝之间发生了一段刻骨铭心、荡气回肠的爱情故事。', 'status': 3}}
-            if req_json["code"] == '200':
+            # {'code': 200, 'code_msg': 'Success', 'trace_id': '561ab138746540b1a1e73c1fc69a33f7',
+            #  'resp_data': {'reply': '《甄嬛传》中的女主角之一，由孙俪饰演。她与雍正皇帝之间发生了一段刻骨铭心、荡气回肠的爱情故事。', 'status': 3}}
+            if req_json['code'] == 200:
                 # print(req_json['resp_Data'])
                 msg = req_json['resp_Data']['reply']
                 print(msg)
