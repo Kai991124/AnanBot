@@ -8,7 +8,7 @@ import re
 __plugin_meta__ = PluginMetadata(
     name="夸夸",
     description="夸夸我的hxd",
-    usage="参考帮助",
+    usage="直接发**是谁就可以",
     config=PluginConfig(),
 )
 
@@ -21,7 +21,7 @@ lp_kuakua = on_regex(pattern=r'(jerry|Jerry+)?是', permission=GROUP, priority=5
 
 
 @hxd_kuakua.handle()
-async def _(event: GroupMessageEvent):
+async def _hxd(event: GroupMessageEvent):
     '夸夸我的好兄弟'
     logger.info(f"<y>群{event.group_id}</y> | <g>{event.user_id}</g> | 请求夸夸")
     message = event.get_plaintext()
@@ -44,7 +44,7 @@ async def _(event: GroupMessageEvent):
 
 
 @td_kuakua.handle()
-async def _(event: GroupMessageEvent):
+async def _td(event: GroupMessageEvent):
     '夸夸我的好徒弟'
     logger.info(f"<y>群{event.group_id}</y> | <g>{event.user_id}</g> | 请求夸夸")
     message = event.get_plaintext()
@@ -54,7 +54,7 @@ async def _(event: GroupMessageEvent):
 
 
 @sf_kuakua.handle()
-async def _(event: GroupMessageEvent):
+async def _sf(event: GroupMessageEvent):
     '夸夸我'
     logger.info(f"<y>群{event.group_id}</y> | <g>{event.user_id}</g> | 请求夸夸")
     message = event.get_plaintext()
@@ -64,7 +64,7 @@ async def _(event: GroupMessageEvent):
 
 
 @lp_kuakua.handle()
-async def _(event: GroupMessageEvent):
+async def _lp老婆(event: GroupMessageEvent):
     '夸夸我lp'
     logger.info(f"<y>群{event.group_id}</y> | <g>{event.user_id}</g> | 请求夸夸")
     message = event.get_plaintext()
