@@ -14,10 +14,10 @@ __plugin_meta__ = PluginMetadata(
 
 'matchers'
 
-hxd_kuakua = on_regex(pattern=r'[西西|老糖|青蛙|托尼|点苍|大少爷|咩人|我哥们儿]+是', permission=GROUP, priority=5, block=True)
-td_kuakua = on_regex(pattern=r'[泡芙|生发丸|千机|泡泡]+是', permission=GROUP, priority=5, block=True)
-sf_kuakua = on_regex(pattern=r'[安安|槐安安|唐一墨|师父]+是', permission=GROUP, priority=5, block=True)
-lp_kuakua = on_regex(pattern=r'[jerry|Jerry]+是', permission=GROUP, priority=5, block=True)
+hxd_kuakua = on_regex(pattern=r'(西西|老糖|青蛙|托尼|点苍|大少爷|咩人|我哥们儿)?是', permission=GROUP, priority=5, block=True)
+td_kuakua = on_regex(pattern=r'(泡芙|生发丸|千机|泡泡)?是', permission=GROUP, priority=5, block=True)
+sf_kuakua = on_regex(pattern=r'(安安|槐安安|唐一墨|师父)+是', permission=GROUP, priority=5, block=True)
+lp_kuakua = on_regex(pattern=r'(jerry|Jerry+)?是', permission=GROUP, priority=5, block=True)
 
 
 @hxd_kuakua.handle()

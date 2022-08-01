@@ -50,7 +50,7 @@ class MyBrowser:
             获取新页面，使用上下文管理器
         """
         browser = await self._get_browser()
-        print(browser)
+        print(browser.is_connected())
         page = await browser.new_page(**kwargs)
         try:
             yield page
