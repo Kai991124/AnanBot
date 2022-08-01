@@ -55,5 +55,5 @@ async def _(bot: Bot, event: GroupMessageEvent, text: str = Depends(check)):
     """自动插话"""
     nickname = list(bot.config.nickname)[0]
     # msg = await get_random_msg(event.group_id, nickname, text)
-    msg = await text
+    msg = text
     await auto_chat.finish(msg)
