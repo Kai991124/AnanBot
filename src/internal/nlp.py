@@ -142,8 +142,9 @@ class NLP:
             }
         }
         try:
-            req = await self.client.post(url = 'https://openapi.singularity-ai.com/api/v2/generateByKey', headers=headers,json=data)
+            req = await self.client.post(url = url, headers=headers,json=data,timeout=None)
             req_json=req.json()
+            print(req_json)
             if req_json["code_msg"] == 'Success':
                 msg = req_json['resp_Data']['reply']
                 print(msg)
