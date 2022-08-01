@@ -112,7 +112,7 @@ class NLP:
         api_key = '6b10811b1b26005d8b0df042ca6bdb28'  # 这里需要替换你的APIKey
         api_secret = '9a83650dce0ec05d4beaa944d58b79624e7bfbcf19f908c9'  # 这里需要替换你的APISecret
         timestamp = str(int(time.time()))
-        prompt = f'以下是一组问答。给出问题，ai会给出答案。\n问：{text}\n答：\n'
+        prompt = f'以下是一组问答。给出问题，ai会给出答案。\n问：{text}\n答：'
         model_version = 'benetnasch_common_gpt3'
         sign_content = api_key + api_secret + model_version + prompt + timestamp
         sign_result = hashlib.md5(sign_content.encode('utf-8')).hexdigest()
